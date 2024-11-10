@@ -3,7 +3,7 @@
 
     try {        
         // conexão PDO    // IP, nomeBD, usuario, senha    
-        $db =  'mysql:host=localhost;dbname=cl202252;charset=utf8';
+        $db =  'mysql:host=143.106.241.3;dbname=cl202252;charset=utf8';
         $user = 'cl202252';
         $passwd = 'cl*28092006';
         $pdo = new PDO($db, $user, $passwd);
