@@ -2,7 +2,7 @@
 
 function unlinkRecursive($dir, $deleteRootToo) 
 { 
-    unlink("../filesForPowerBi.zip");
+    unlink("filesForPowerBi.zip");
     if(!$dh = @opendir($dir)) 
     { 
         return; 

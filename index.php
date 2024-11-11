@@ -30,12 +30,12 @@
             </tr>
 
             <tr>
-                <td><input type='checkbox' name='fileOp[]' value="expense"></td>;
+                <td><input type='checkbox' name='fileOp[]' value="asset"></td>;
                 <td>asset.csv</td>
             </tr>
 
             <tr>
-                <td><input type='checkbox' name='fileOp[]' value="expense"></td>;
+                <td><input type='checkbox' name='fileOp[]' value="tagAsset"></td>;
                 <td>tagAsset.csv</td>
             </tr>
         </table>

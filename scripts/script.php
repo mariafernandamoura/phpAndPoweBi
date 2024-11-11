@@ -28,6 +28,12 @@
                 case "expense":
                     $stmt = $pdo->prepare("SELECT * FROM Expense");
                     break;
+                case "asset":
+                    $stmt = $pdo->prepare("SELECT * FROM Asset");
+                    break;
+                case "tagAsset":
+                    $stmt = $pdo->prepare("SELECT * FROM tagAsset");
+                    break;
             }
             $stmt->execute();
             $f = fopen('../files/'.$file.'.csv', 'w');
@@ -64,8 +70,13 @@
             if(in_array('tagExpense', $selectedFiles)){
                 prepareContent("tagExpense");     
             }
+            if(in_array('asset', $selectedFiles)){
+                prepareContent("asset");     
+            }
+            if(in_array('tagAsset', $selectedFiles)){
+                prepareContent("tagAsset");     
+            }
         }
         generateFiles();
         include('download.php');
     }
-?>
